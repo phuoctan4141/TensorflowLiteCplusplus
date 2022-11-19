@@ -1,6 +1,10 @@
 # TensorflowLiteCplusplus
  TensorflowLiteCplusplus Linux_x64
  
+bazel build -c opt //tensorflow/lite:libtensorflowlite.so
+
+bazel build -c opt //tensorflow/lite/experimental/c:libtensorflowlite_c.so
+ 
  `sudo cp -r include /usr/local`
  
  `sudo cp -r libtensorflowlite.so  /usr/local/lib`
