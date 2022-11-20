@@ -4,4 +4,4 @@ SRC = MobileNetV1LX64.cpp
 OPENCV_LIBS = `pkg-config --cflags --libs opencv4`
 TFLITE_LIBS = -ltensorflowlite
 $(PROJECT) : $(SRC)
-	$(CC) $(SRC) -o $(PROJECT) $(LIBS) $(TFLITE_LIBS)
+	$(CC) $(SRC) -o $(PROJECT) $(OPENCV_LIBS) $(TFLITE_LIBS)
