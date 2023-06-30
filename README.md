@@ -5,7 +5,7 @@ bazel build -c opt //tensorflow/lite:libtensorflowlite.so
 
 bazel build -c opt //tensorflow/lite/experimental/c:libtensorflowlite_c.so
 
-find ./lite -name "*.h" | tar -cf headers.tar -T -
+[find ./lite -name "*.h" | tar -cf headers.tar -T -](https://www.thecodingnotebook.com/2019/11/cross-platform-object-detection-with.html)
  
  `sudo cp -r include /usr/local`
  
