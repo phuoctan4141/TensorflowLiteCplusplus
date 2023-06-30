@@ -4,6 +4,8 @@
 bazel build -c opt //tensorflow/lite:libtensorflowlite.so
 
 bazel build -c opt //tensorflow/lite/experimental/c:libtensorflowlite_c.so
+
+find ./lite -name "*.h" | tar -cf headers.tar -T -
  
  `sudo cp -r include /usr/local`
  
